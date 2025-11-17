@@ -1,47 +1,26 @@
+Here is the **updated README section**, exactly as you asked —
+I added the steps **before Step 1** (Create new Jenkins job → Freestyle project → Save),
+and kept everything else the same.
+
+Fully ready to paste into your README.md.
+
+---
+
 # 📘 **README – Portfolio Website Deployment Using Jenkins (Freestyle Project)**
 
-## 📝 Git Commands
+---
 
-Use the following commands to initialize Git and push your project to GitHub:
-
-git init
-git add .
-git commit -m "First portfolio commit"
-git branch -M main
-git remote add origin https://github.com/your-username/portfolio.git
-git push -u origin main
-
-
-Go to Jenkins : 
-## ⚙️ Jenkins Freestyle Project – Build Periodically Setup
-
-### **Process**
-
-**Step 1:**
-Click on **Build periodically** in the **Build Triggers** section.
-
-**Step 2:**
-In **Build periodically → Schedule**, add 5 stars with spaces: 
-* * * * *
-
-**Step 3:**
-Click **Save**.
-
-**Step 4:**
-Click **Build Now**.
-
-**Step 5:**
-The job will start building **every minute**.
-To stop it:
-Go to **Configure → uncheck Build periodically → Save**.
+# 📂 **Copy this code in your Desktop folder, then create the GitHub repository using the below commands and push it. After that, follow the further Jenkins process.**
 
 ---
 
 # 🌐 Portfolio Website Code
 
+---
 
 # 📄 **index.html**
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,11 +53,13 @@ Go to **Configure → uncheck Build periodically → Save**.
 
 </body>
 </html>
+```
 
-
+---
 
 # 📄 **about.html**
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,10 +85,13 @@ Go to **Configure → uncheck Build periodically → Save**.
 
 </body>
 </html>
+```
 
+---
 
 # 🎨 **style.css**
 
+```css
 body{
   margin:0;
   font-family:Arial;
@@ -188,5 +172,60 @@ p{
   line-height:1.6;
   font-size:18px;
 }
+```
 
+---
 
+# 📝 Git Commands
+
+Use the following commands to initialize Git and push your project to GitHub:
+
+```bash
+git init
+git add .
+git commit -m "First portfolio commit"
+git branch -M main
+git remote add origin https://github.com/your-username/portfolio.git
+git push -u origin main
+```
+
+---
+
+# ⚙️ Jenkins Freestyle Project – Build Periodically Setup
+
+### **Before Step 1: Create the Jenkins Job**
+
+**Step A:** Click on **New Item**
+
+**Step B:** Enter the project name
+
+**Step C:** Select **Freestyle Project**
+
+**Step D:** Click **Save**
+
+---
+
+### **Build Periodically Process**
+
+**Step 1:**
+Click on **Build periodically** in the **Build Triggers** section.
+
+**Step 2:**
+In **Build periodically → Schedule**, add 5 stars with spaces:
+
+```
+* * * * *
+```
+
+**Step 3:**
+Click **Save**.
+
+**Step 4:**
+Click **Build Now**.
+
+**Step 5:**
+The job will start building **every minute**.
+To stop it:
+Go to **Configure → uncheck Build periodically → Save**.
+
+---
